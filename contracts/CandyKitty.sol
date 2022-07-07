@@ -89,6 +89,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
         bytes memory bNonce = new bytes((_tokenIds.length+1)*32);
         for (uint256 idx = 0; idx < _tokenIds.length; idx++) {
             uint256 tokenId = _tokenIds[idx];
+            require(tokenId <= 1000 && tokenId > 0, "incorrect tokenId");
             assembly { mstore(add(bNonce, add(0x20, mul(idx, 0x20))), tokenId) }
         }
         assembly { mstore(add(bNonce, mul(add(_tokenIds.length, 1), 32)), _nonce) }
@@ -213,6 +214,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
     }
 
     function withdraw(address payable _recipient, IERC20 _token) external onlyOwner returns(bool) {
+        require(_recipient != address(0x00), "recipient is zero address");
         if (address(_token) == address(0x00)) {
             uint256 balance = address(this).balance;
             _recipient.transfer(balance);
