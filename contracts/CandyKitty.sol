@@ -36,6 +36,11 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
     address public signerAddress;
 
     event WhitelistMint(address to, uint256 tokenId);
+    event NestingOpened(bool open);
+    event NewSignerAddress(address newSigner);
+    event NewStatus(Status status);
+    event NewPrice(uint256 preSalePrice, uint256 publicSalePrice);
+    event NewBaseURI(string uri);
 
     constructor(
         string memory _name,
@@ -117,6 +122,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
 
     function setSignerAddress(address _newSigner) external onlyOwner {
         signerAddress = _newSigner;
+        emit NewSignerAddress(_newSigner);
     }
 
     function requireValidSignature(address _to, bytes32 _nonce, bytes memory _sig) internal {
@@ -124,6 +130,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
         require(!usedMessages[message], "SignatureChecker: Message already used");
         usedMessages[message] = true;
         address signer = ECDSA.recover(message, _sig);
+        require(signer != address(0x00), "signer cannot be zero address");
         require(signer == signerAddress, "SignatureChecker: Invalid signature");
     }
 
@@ -160,6 +167,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
 
     function setNestingOpen(bool open) external onlyOwner {
         nestingOpen = open;
+        emit NestingOpened(open);
     }
 
     function toggleNesting(uint256 tokenId) internal {
@@ -201,16 +209,19 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
 
     function setBaseURI(string memory _uri) public onlyOwner returns(bool) {
         baseURI = _uri;
+        emit NewBaseURI(_uri);
         return true;
     }
 
     function setStatus(Status _status) external onlyOwner {
         status = _status;
+        emit NewStatus(_status);
     }
 
     function setPrice(uint256 _preSalePrice, uint256 _publicSalePrice) external onlyOwner {
         preSalePrice = _preSalePrice;
         publicSalePrice = _publicSalePrice;
+        emit NewPrice(_preSalePrice, _publicSalePrice);
     }
 
     function withdraw(address payable _recipient, IERC20 _token) external onlyOwner returns(bool) {
