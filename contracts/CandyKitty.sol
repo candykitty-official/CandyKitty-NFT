@@ -126,6 +126,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
     }
 
     function requireValidSignature(address _to, bytes32 _nonce, bytes memory _sig) internal {
+        require(msg.sender == _to, "_to address must be the caller address");
         bytes32 message = ECDSA.toEthSignedMessageHash(abi.encodePacked(_to, _nonce));
         require(!usedMessages[message], "SignatureChecker: Message already used");
         usedMessages[message] = true;
