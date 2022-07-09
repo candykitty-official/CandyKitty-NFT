@@ -5,9 +5,14 @@ Candy Kitty is a community-initiated collectible project inspired by the America
 
 
 ## Contract Address
-### Rinkeby
-CandyKitty [0x09A6feA1907b8277208d864F5b3D994B36a046B5](https://rinkeby.etherscan.io/address/0x09a6fea1907b8277208d864f5b3d994b36a046b5)
-
-Galler NFT Manager [0x2A1e987d0709345a5871Ffd78453b57cbc02109C](https://rinkeby.etherscan.io/address/0x2a1e987d0709345a5871ffd78453b57cbc02109c)
 
 ### ETH
+CandyKitty [0x7C455d0829f1132Ba6Fa8B70683b6717Eaf2aAC9](https://etherscan.io/address/0x7c455d0829f1132ba6fa8b70683b6717eaf2aac9)
+
+Galler NFT Manager [0x8d61bb7A687b019500F75A4d59D859DEf69576A9](https://rinkeby.etherscan.io/address/0x8d61bb7A687b019500F75A4d59D859DEf69576A9)
+
+
+### Rinkeby
+CandyKitty [0x19E4f4969c3a4A4141aD8DB31612C36925F15E1C](https://rinkeby.etherscan.io/address/0x19E4f4969c3a4A4141aD8DB31612C36925F15E1C)
+
+Galler NFT Manager [0x2A1e987d0709345a5871Ffd78453b57cbc02109C](https://rinkeby.etherscan.io/address/0x2a1e987d0709345a5871ffd78453b57cbc02109c)
