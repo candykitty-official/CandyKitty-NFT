@@ -108,6 +108,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
     }
 
     function mintToMarketplace(address _to, uint256 _quantity) public onlyRole(MANAGER_ROLE) {
+        require(status != Status.Pending && status != Status.Finished, "not in mint period");
         require(tokenIdx + _quantity <= maxSupply, "exceed max mint amount");
         _batchMint(_to, _quantity);
     }
