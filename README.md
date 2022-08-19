@@ -7,7 +7,7 @@ Candy Kitty is a community-initiated collectible project inspired by the America
 ## Contract Address
 
 ### ETH
-CandyKitty [0x7C455d0829f1132Ba6Fa8B70683b6717Eaf2aAC9](https://etherscan.io/address/0x7c455d0829f1132ba6fa8b70683b6717eaf2aac9)
+CandyKitty [0x9173c28236C5bC6F1b47e659DD636c054Ef0e39b](https://etherscan.io/address/0x9173c28236C5bC6F1b47e659DD636c054Ef0e39b)
 
 Galler NFT Manager [0x8d61bb7A687b019500F75A4d59D859DEf69576A9](https://etherscan.io/address/0x8d61bb7A687b019500F75A4d59D859DEf69576A9)
 
