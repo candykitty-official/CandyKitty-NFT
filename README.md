@@ -13,6 +13,6 @@ Galler NFT Manager [0x8d61bb7A687b019500F75A4d59D859DEf69576A9](https://ethersca
 
 
 ### Rinkeby
-CandyKitty [0x19E4f4969c3a4A4141aD8DB31612C36925F15E1C](https://rinkeby.etherscan.io/address/0x19E4f4969c3a4A4141aD8DB31612C36925F15E1C)
+CandyKitty [0xaac6334298777b728555d7BE3608557b3Fc5b21C](https://rinkeby.etherscan.io/address/0xaac6334298777b728555d7BE3608557b3Fc5b21C)
 
 Galler NFT Manager [0x2A1e987d0709345a5871Ffd78453b57cbc02109C](https://rinkeby.etherscan.io/address/0x2a1e987d0709345a5871ffd78453b57cbc02109c)
