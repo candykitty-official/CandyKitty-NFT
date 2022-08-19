@@ -27,7 +27,7 @@ contract CandyKitty is Ownable, ERC721, AccessControl {
     string public baseURI;
     string public defaultURI;
     uint256 public tokenIdx = 1000;
-    uint256 public maxSupply = 10000;
+    uint256 public maxSupply = 6666;
 
     uint256 public preSalePrice;
     uint256 public publicSalePrice;
