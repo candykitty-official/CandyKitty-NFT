@@ -15,3 +15,5 @@ Galler NFT Manager [0x8d61bb7A687b019500F75A4d59D859DEf69576A9](https://ethersca
 CandyKitty [0xaac6334298777b728555d7BE3608557b3Fc5b21C](https://rinkeby.etherscan.io/address/0xaac6334298777b728555d7BE3608557b3Fc5b21C)
 
 Galler NFT Manager [0x2A1e987d0709345a5871Ffd78453b57cbc02109C](https://rinkeby.etherscan.io/address/0x2a1e987d0709345a5871ffd78453b57cbc02109c)
+
+NFT Batch Transfer [0xe5Fddae378beeb9a9A5079A702F487d38aFF6433](https://rinkeby.etherscan.io/address/0xe5fddae378beeb9a9a5079a702f487d38aff6433)
